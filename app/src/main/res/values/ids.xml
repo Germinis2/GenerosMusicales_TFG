@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="favButton1" type="id" />
+    <item name="favButton2" type="id" />
+    <item name="favButton3" type="id" />
+    <item name="favButton4" type="id" />
+    <item name="favButton5" type="id" />
+    <item name="favButton6" type="id" />
+    <item name="textArtist1" type="id" />
+    <item name="textArtist2" type="id" />
+    <item name="textArtist3" type="id" />
+    <item name="textArtist4" type="id" />
+    <item name="textArtist5" type="id" />
+    <item name="textArtist6" type="id" />
+    <item name="imagenArtista4" type="id" />
+    <item name="imagenArtista1" type="id" />
+    <item name="imagenArtista2" type="id" />
+    <item name="imagenArtista3" type="id" />
+    <item name="imagenArtista5" type="id" />
+    <item name="imagenArtista6" type="id" />
+    <item name="nombreArtista1" type="id" />
+    <item name="nombreArtista3" type="id" />
+    <item name="nombreArtista4" type="id" />
+    <item name="nombreArtista5" type="id" />
+    <item name="nombreArtista6" type="id" />
+    <item name="nombreArtista2" type="id" />
+    <item name="textoAlbum1" type="id" />
+    <item name="nombreAlbum1" type="id" />
+    <item name="textoAlbum2" type="id" />
+    <item name="imageAlbum1" type="id" />
+    <item name="textoAlbum3" type="id" />
+    <item name="nombreAlbum2" type="id" />
+    <item name="nombreAlbum3" type="id" />
+    <item name="nombreAlbum4" type="id" />
+</resources>

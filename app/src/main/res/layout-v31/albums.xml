@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_theme_light_primaryContainer">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/md_theme_light_primaryContainer"
+            >
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paragraphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/md_theme_light_onSecondaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAlbum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/md_theme_light_inversePrimary"
+            app:contentPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                <ImageView
+                    android:id="@+id/imageAlbum1"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/musica_clasica"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading"
+                    android:background="@drawable/rounded_corner"
+                     />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    >
+
+                    <TextView
+                        android:id="@id/nombreAlbum1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@id/textoAlbum1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="14sp" />
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/rounded_corner"
+                        android:clickable="true"
+                        android:clipToOutline="true"
+                        android:focusable="true"
+                        android:scaleType="fitCenter"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rym_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="@string/lee_opiniones_en_rateyourmusic_com"
+                        android:layout_marginTop="22dp"
+                        android:textSize="17sp"
+                        app:backgroundTint="@color/md_theme_dark_primary"
+                        app:cornerRadius="24dp"
+                        app:strokeColor="@color/md_theme_light_onPrimary"
+                        app:strokeWidth="2dp"
+                        app:tint="@color/cardview_dark_background" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAlbum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/md_theme_light_inversePrimary"
+            app:contentPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:id="@+id/imageAlbum2"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/musica_clasica"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/loading"
+                        android:background="@drawable/rounded_corner"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@id/nombreAlbum2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@id/textoAlbum2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="14sp" />
+
+                    <WebView
+                        android:id="@+id/webView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/rounded_corner"
+                        android:clickable="true"
+                        android:clipToOutline="true"
+                        android:focusable="true"
+                        android:scaleType="fitCenter" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rym_button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="@string/lee_opiniones_en_rateyourmusic_com"
+                        android:layout_marginTop="25dp"
+                        android:textSize="17sp"
+                        app:backgroundTint="@color/md_theme_dark_primary"
+                        app:cornerRadius="24dp"
+                        app:strokeColor="@color/md_theme_light_onPrimary"
+                        app:strokeWidth="2dp"
+                        app:tint="@color/cardview_dark_background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAlbum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/md_theme_light_inversePrimary"
+            app:contentPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:id="@+id/imageAlbum3"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/musica_clasica"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/loading"
+                        android:background="@drawable/rounded_corner"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@id/nombreAlbum3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@id/textoAlbum3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="14sp" />
+
+                    <WebView
+                        android:id="@+id/webView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/rounded_corner"
+                        android:clickable="true"
+                        android:clipToOutline="true"
+                        android:focusable="true"
+                        android:scaleType="fitCenter" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rym_button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="@string/lee_opiniones_en_rateyourmusic_com"
+                        android:layout_marginTop="25dp"
+                        android:textSize="17sp"
+                        app:backgroundTint="@color/md_theme_dark_primary"
+                        app:cornerRadius="24dp"
+                        app:strokeColor="@color/md_theme_light_onPrimary"
+                        app:strokeWidth="2dp"
+                        app:tint="@color/cardview_dark_background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAlbum4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/md_theme_light_inversePrimary"
+            app:contentPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:id="@+id/imageAlbum4"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/musica_clasica"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/loading"
+                        android:background="@drawable/rounded_corner"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@id/nombreAlbum4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textoAlbum4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_theme_light_onPrimaryContainer"
+                        android:textSize="14sp" />
+
+                    <WebView
+                        android:id="@+id/webView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/rounded_corner"
+                        android:clickable="true"
+                        android:clipToOutline="true"
+                        android:focusable="true"
+                        android:scaleType="fitCenter" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rym_button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="@string/lee_opiniones_en_rateyourmusic_com"
+                        android:layout_marginTop="25dp"
+                        android:textSize="17sp"
+                        app:backgroundTint="@color/md_theme_dark_primary"
+                        app:cornerRadius="24dp"
+                        app:strokeColor="@color/md_theme_light_onPrimary"
+                        app:strokeWidth="2dp"
+                        app:tint="@color/cardview_dark_background" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+    </FrameLayout>
+
+</ScrollView>

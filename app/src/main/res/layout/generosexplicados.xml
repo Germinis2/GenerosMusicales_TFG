@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_theme_light_primaryContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/md_theme_light_primaryContainer"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/backclasica"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="@string/musica_clasica"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paragraphTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/md_theme_light_onSecondaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArtist1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@id/imagenArtista1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            android:id="@id/nombreArtista1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/md_theme_dark_background"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/genresArtist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g_neros"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/followersArtist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seguidores"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/popularityArtist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popularidad"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArtist2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@id/nombreArtista2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/md_theme_dark_background"
+                        />
+
+                    <TextView
+                        android:id="@+id/genresArtist2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g_neros"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/followersArtist2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seguidores"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/popularityArtist2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popularidad"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/imagenArtista2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArtist3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/md_theme_light_error"
+            app:cardElevation="4dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@id/imagenArtista3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            android:id="@id/nombreArtista3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/md_theme_dark_background"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/genresArtist3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g_neros"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/followersArtist3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seguidores"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/popularityArtist3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popularidad"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArtist4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/md_theme_light_secondary"
+            app:cardElevation="4dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@id/nombreArtista4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_theme_dark_background"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/genresArtist4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g_neros"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/followersArtist4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seguidores"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/popularityArtist4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popularidad"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/imagenArtista4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArtist5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/md_theme_light_error"
+            app:cardElevation="4dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@id/imagenArtista5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <TextView
+                            android:id="@id/nombreArtista5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/md_theme_dark_background"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/genresArtist5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g_neros"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/followersArtist5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seguidores"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/popularityArtist5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popularidad"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArtist6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/md_theme_light_secondary"
+            app:cardElevation="4dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@id/nombreArtista6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/md_theme_dark_background" />
+
+                    <TextView
+                        android:id="@+id/genresArtist6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g_neros"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/followersArtist6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seguidores"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+
+                    <TextView
+                        android:id="@+id/popularityArtist6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popularidad"
+                        android:textSize="14sp"
+                        android:textColor="@color/md_theme_dark_background"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/imagenArtista6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>
